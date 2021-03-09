@@ -117,19 +117,27 @@ class ArrayList:
         and enclosed by square brackets. E.g., for a list containing values
         1, 2 and 3, returns '[1, 2, 3]'."""
         ### BEGIN SOLUTION
+        return "[" + ", ".join(str(i) for i in self) + "]"
         ### END SOLUTION
 
     def __repr__(self):
         """Supports REPL inspection. (Same behavior as `str`.)"""
         ### BEGIN SOLUTION
+        return str(self) 
         ### END SOLUTION
-
 
     ### single-element manipulation ###
 
     def append(self, value):
         """Appends value to the end of this list."""
         ### BEGIN SOLUTION
+        if len(self.data) < self.len+1:
+            newa = ConstrainedList(2 * len(self)+1) 
+            for i in range(self.len): 
+                newa[i] = self[i]   
+            self.data = newa 
+        self.len += 1
+        self[self.len-1] = value                      
         ### END SOLUTION
 
     def insert(self, idx, value):
@@ -171,6 +179,7 @@ class ArrayList:
     def __len__(self):
         """Implements `len(self)`"""
         ### BEGIN SOLUTION
+        return self.len 
         ### END SOLUTION
 
     def min(self):
@@ -227,6 +236,8 @@ class ArrayList:
     def __iter__(self):
         """Supports iteration (via `iter(self)`)"""
         ### BEGIN SOLUTION
+        for i in range(self.len):
+            yield self.data[i]     
         ### END SOLUTION
 
 ################################################################################
