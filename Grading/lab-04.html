@@ -1,0 +1,104 @@
+
+<html>
+  <head>
+    <title>Lab 04 - Graded Solution</title>
+  </head>
+  <body>
+    <h1>Lab 04 - Graded Solution</h1>
+    <p><b>You scored 40% = 0.8 points for this lab.</b></p>
+    <ul>
+      <li><b>Testing subscript-based acess</b>
+      <ul>
+      <li>Grade Percentage: 15</li>
+      <li>Your solution succeeded taking 0.408 sec</Li>
+      </ul>
+      </li>
+      <li><b>test stringification</b>
+      <ul>
+      <li>Grade Percentage: 10</li>
+      <li>Your solution succeeded taking 0.408 sec</Li>
+      </ul>
+      </li>
+      <li><b>testing single-element manipulation</b>
+      <ul>
+      <li>Grade Percentage: 15</li>
+      <li>Your solution failed this test case! taking 0.408 sec</Li>
+<li><pre>AssertionError: Expected [332, 587, 74, 495, 219, 526, 647, 594, 747, 76, 491, 878, 323, 342, 143, 707, 131, 410, 736, 11, 696, 533, 343, 27, 909, 890, 41, 666, 363, 154, 67, 595, 873, 992, 91, 570, 45, 216, 926, 976, 299, 764, 620, 109, 932, 124, 319, 382, 151, 646, 967, 458, 824, 828, 819, 272, 692, 481, 130, 974, 22, 321, 172, 677, 386, 908, 64, 238, 521, 825, 701, 207, 480, 931, 998, 294, 851, 228, 794, 486, 587, 0, 849, 676, 400, 307, 921, 413, 92, 940, 329, 572, 690, 653, 516, 245, 745, 758, 66, 687] but got [991, 947, 332, 587, 263, 74, 110, 495, 872, 459, 932, 219, 526, 63, 939, 992, 647, 933, 594, 802, 747, 365, 76, 491, 878, 323, 342, 973, 475, 600, 118, 143, 707, 131, 323, 410, 736, 13, 11, 781, 585, 736, 118, 696, 428, 533, 343, 925, 529, 562, 27, 909, 603, 107, 304, 229, 317, 890, 41, 4, 915, 532, 666, 363, 154, 421, 67, 595, 203, 873, 372, 992, 91, 570, 340, 517, 567, 352, 613, 45, 860, 216, 926, 976, 299, 755, 764, 709, 665, 620, 943, 148, 728, 109, 932, 527, 694, 891, 16, 444, 124, 319, 382, 151, 196, 172, 843, 753, 303, 646, 967, 458, 824, 685, 828, 819, 181, 272, 692, 481, 130, 974, 22, 321, 172, 677, 602, 169, 386, 961, 686, 908, 692, 125, 64, 238, 480, 521, 399, 810, 825, 701, 195, 878, 369, 207, 842, 348, 480, 697, 80, 931, 33, 998, 294, 851, 228, 836, 794, 486, 58, 664, 203, 280, 587, 0, 972, 849, 676, 404, 202, 400, 798, 307, 851, 921, 413, 92, 939, 940, 329, 572, 690, 930, 848, 568, 905, 87, 653, 575, 516, 910, 747, 245, 873, 745, 758, 66, 623, 687]</pre></li>
+<li><pre>Traceback (most recent call last):
+  File "/Users/lord_pretzel/.pyenv/versions/3.9.0/lib/python3.9/site-packages/grader-0.0.1-py3.9.egg/grader/execution_base.py", line 60, in call_test_function
+    test_function(
+  File "/Users/lord_pretzel/.pyenv/versions/3.9.0/lib/python3.9/site-packages/grader-0.0.1-py3.9.egg/grader/core.py", line 48, in wrapper
+    result = test_function(module, *args, **kwargs)
+  File "/var/folders/f7/xnz8v_b13td37s3k4w8t5j2h0000gn/T/tmp90catki2/lab04-test.py", line 100, in test3_3
+    assertEquals(data, arrayListToList(lst))
+  File "/Users/lord_pretzel/.pyenv/versions/3.9.0/lib/python3.9/site-packages/grader-0.0.1-py3.9.egg/grader/assertions.py", line 53, in assertEquals
+    raise AssertionError(message)
+AssertionError: Expected [332, 587, 74, 495, 219, 526, 647, 594, 747, 76, 491, 878, 323, 342, 143, 707, 131, 410, 736, 11, 696, 533, 343, 27, 909, 890, 41, 666, 363, 154, 67, 595, 873, 992, 91, 570, 45, 216, 926, 976, 299, 764, 620, 109, 932, 124, 319, 382, 151, 646, 967, 458, 824, 828, 819, 272, 692, 481, 130, 974, 22, 321, 172, 677, 386, 908, 64, 238, 521, 825, 701, 207, 480, 931, 998, 294, 851, 228, 794, 486, 587, 0, 849, 676, 400, 307, 921, 413, 92, 940, 329, 572, 690, 653, 516, 245, 745, 758, 66, 687] but got [991, 947, 332, 587, 263, 74, 110, 495, 872, 459, 932, 219, 526, 63, 939, 992, 647, 933, 594, 802, 747, 365, 76, 491, 878, 323, 342, 973, 475, 600, 118, 143, 707, 131, 323, 410, 736, 13, 11, 781, 585, 736, 118, 696, 428, 533, 343, 925, 529, 562, 27, 909, 603, 107, 304, 229, 317, 890, 41, 4, 915, 532, 666, 363, 154, 421, 67, 595, 203, 873, 372, 992, 91, 570, 340, 517, 567, 352, 613, 45, 860, 216, 926, 976, 299, 755, 764, 709, 665, 620, 943, 148, 728, 109, 932, 527, 694, 891, 16, 444, 124, 319, 382, 151, 196, 172, 843, 753, 303, 646, 967, 458, 824, 685, 828, 819, 181, 272, 692, 481, 130, 974, 22, 321, 172, 677, 602, 169, 386, 961, 686, 908, 692, 125, 64, 238, 480, 521, 399, 810, 825, 701, 195, 878, 369, 207, 842, 348, 480, 697, 80, 931, 33, 998, 294, 851, 228, 836, 794, 486, 58, 664, 203, 280, 587, 0, 972, 849, 676, 404, 202, 400, 798, 307, 851, 921, 413, 92, 939, 940, 329, 572, 690, 930, 848, 568, 905, 87, 653, 575, 516, 910, 747, 245, 873, 745, 758, 66, 623, 687]
+</pre></li>
+      </ul>
+      </li>
+      <li><b>testing predicates</b>
+      <ul>
+      <li>Grade Percentage: 15</li>
+      <li>Your solution failed this test case! taking 0.406 sec</Li>
+<li><pre>AssertionError: Expected [1, 2, 3] but got [1, 2, 3]</pre></li>
+<li><pre>Traceback (most recent call last):
+  File "/Users/lord_pretzel/.pyenv/versions/3.9.0/lib/python3.9/site-packages/grader-0.0.1-py3.9.egg/grader/execution_base.py", line 60, in call_test_function
+    test_function(
+  File "/Users/lord_pretzel/.pyenv/versions/3.9.0/lib/python3.9/site-packages/grader-0.0.1-py3.9.egg/grader/core.py", line 48, in wrapper
+    result = test_function(module, *args, **kwargs)
+  File "/var/folders/f7/xnz8v_b13td37s3k4w8t5j2h0000gn/T/tmpv2m35jbl/lab04-test.py", line 135, in test1_4
+    assertEquals(lst, lst2)
+  File "/Users/lord_pretzel/.pyenv/versions/3.9.0/lib/python3.9/site-packages/grader-0.0.1-py3.9.egg/grader/assertions.py", line 53, in assertEquals
+    raise AssertionError(message)
+AssertionError: Expected [1, 2, 3] but got [1, 2, 3]
+</pre></li>
+      </ul>
+      </li>
+      <li><b>testing queries</b>
+      <ul>
+      <li>Grade Percentage: 15</li>
+      <li>Your solution failed this test case! taking 0.415 sec</Li>
+<li><pre>AssertionError: Expected None but got 0</pre></li>
+<li><pre>Traceback (most recent call last):
+  File "/Users/lord_pretzel/.pyenv/versions/3.9.0/lib/python3.9/site-packages/grader-0.0.1-py3.9.egg/grader/execution_base.py", line 60, in call_test_function
+    test_function(
+  File "/Users/lord_pretzel/.pyenv/versions/3.9.0/lib/python3.9/site-packages/grader-0.0.1-py3.9.egg/grader/core.py", line 48, in wrapper
+    result = test_function(module, *args, **kwargs)
+  File "/var/folders/f7/xnz8v_b13td37s3k4w8t5j2h0000gn/T/tmp1ebcdizu/lab04-test.py", line 156, in test1_5
+    assertEquals(0, lst.count(1))
+  File "/Users/lord_pretzel/.pyenv/versions/3.9.0/lib/python3.9/site-packages/grader-0.0.1-py3.9.egg/grader/assertions.py", line 53, in assertEquals
+    raise AssertionError(message)
+AssertionError: Expected None but got 0
+</pre></li>
+      </ul>
+      </li>
+      <li><b>testing bulk operations</b>
+      <ul>
+      <li>Grade Percentage: 15</li>
+      <li>Your solution failed this test case! taking 0.407 sec</Li>
+<li><pre>AssertionError: Expected {expected_type} but got {type(got)}</pre></li>
+<li><pre>Traceback (most recent call last):
+  File "/Users/lord_pretzel/.pyenv/versions/3.9.0/lib/python3.9/site-packages/grader-0.0.1-py3.9.egg/grader/execution_base.py", line 60, in call_test_function
+    test_function(
+  File "/Users/lord_pretzel/.pyenv/versions/3.9.0/lib/python3.9/site-packages/grader-0.0.1-py3.9.egg/grader/core.py", line 48, in wrapper
+    result = test_function(module, *args, **kwargs)
+  File "/var/folders/f7/xnz8v_b13td37s3k4w8t5j2h0000gn/T/tmphf51_dtr/lab04-test.py", line 196, in test1_6
+    assertIsInstance(lst3, m.module.ArrayList)
+  File "/Users/lord_pretzel/.pyenv/versions/3.9.0/lib/python3.9/site-packages/grader-0.0.1-py3.9.egg/grader/assertions.py", line 48, in assertIsInstance
+    assertTrue(isinstance(got, expected_type), template)
+  File "/Users/lord_pretzel/.pyenv/versions/3.9.0/lib/python3.9/site-packages/grader-0.0.1-py3.9.egg/grader/assertions.py", line 60, in assertTrue
+    raise AssertionError(template)
+AssertionError: Expected {expected_type} but got {type(got)}
+</pre></li>
+      </ul>
+      </li>
+      <li><b>testing iteration</b>
+      <ul>
+      <li>Grade Percentage: 15</li>
+      <li>Your solution succeeded taking 0.398 sec</Li>
+      </ul>
+      </li>
+    </ul>
+  </body>
+</html>
